@@ -15,7 +15,7 @@ on:
     
 env:
   ROM_URL: https://firmware.meizu.com/Firmware/Flyme/16s_Pro/8.1.5.0/cn/20200901170707/a37c3093/update.zip
-  ROM_NAME: Flyme For Android 10
+  ROM_NAME: Flyme
   TZ: Asia/Shanghai
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
        - name: Checkout
          uses: actions/checkout@master
        
-       - name: Clean Up
+    #   - name: Clean Up
          run: |
            docker rmi `docker images -q`
            sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
@@ -51,7 +51,7 @@ jobs:
               sudo bash setup.sh
        
        - name: Download Stock Rom & Generate GSI
-         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME ab
+         run: sudo ./ErfanGSIs/url2GSI.sh $ROM_URL $ROM_NAME -ab
        
        - name: Zip GSI  
          run: |
