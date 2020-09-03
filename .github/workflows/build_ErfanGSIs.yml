@@ -60,7 +60,9 @@ jobs:
        
        - name: Upload GSI to trq
          run: |
+
               curl -sL https://git.io/file-transfer | sh
+
               ./transfer bit final/GSI.zip
 
          
