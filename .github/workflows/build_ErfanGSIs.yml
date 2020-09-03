@@ -15,7 +15,7 @@ on:
     
 env:
   ROM_URL: https://download.meizu.com/Firmware/Flyme/16s_Pro/8.20.9.2/cn_daily/20200902002118/dadb41fb/update.zip
-  ROM_NAME: Oxygen:Hydrogen For Android 10
+  ROM_NAME: OxygenOS:HydrogenOS For Android 10
   TZ: Asia/Shanghai
 
 jobs:
