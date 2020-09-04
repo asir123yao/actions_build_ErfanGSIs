@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://download.meizu.com/Firmware/Flyme/16s_Pro/8.20.9.2/cn_daily/20200902002118/dadb41fb/update.zip
+  ROM_URL: http://download.h2os.com/OnePlus7Pro/OBT/OnePlus7ProHydrogen_13.X.41_OTA_041_all_2008032303_9141db676f884971.zip
   ROM_NAME: OxygenOS:HydrogenOS For Android 10
   TZ: Asia/Shanghai
 
